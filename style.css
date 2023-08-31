@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    display: flex;
+    background-color: beige;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(7, 7, 40);
+
+}
+
+.container{
+    display: flex;
+    position: relative;
+    height: 10em;
+    width: 35%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.dessus{
+    width: 90%;
+    height: 98%;
+    position: absolute;
+    top: 5px;
+    right: 10%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 170px;
+    border-bottom-right-radius: 170px;
+    background-color: rgb(72, 71, 71);
+    z-index: 1;
+}
+
+
+.dessous{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    bottom: 5px;
+    right: 5%;
+    border-top-left-radius: 170px;
+    border-top-right-radius: 170px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    background-color: gray;
+}
+
+.entete{
+    display: flex;
+    margin-top: 2%;
+    position: relative;
+    width: 100%;
+    height: 10%;
+    font-size: 20px;
+    justify-content: center;
+    color: white;
+    
+}
+
+#marque{
+    position: absolute;
+    left: 1.5%;
+    top: 0;
+}
+#version{
+    position: absolute;
+    right: 1.5%;
+    top: 10%;
+}
+#comment{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.ecranContainer{
+    display: flex;
+    width: 95%;
+    height: 12%;
+    background-color: rgb(168, 167, 167);
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ecran{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 95%;
+    height: 90%;
+    border-radius: 25px;
+    background-color: gray;
+    font-size: 20px;
+}
+
+input{
+    border: none;
+    border-radius: 25px;
+    width: 95%;
+    height: 100%;
+    font-size: 40px;
+}
+
+::placeholder{
+    text-align: right;
+}
+
+.bloc1{
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+    width: 90%;
+    height: 20%;
+    margin: auto;
+    margin-top: 1.5%;
+    
+}
+
+.primaire{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 20%;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.prim1{
+    position: absolute;
+    left: 0;
+    top: 5%;
+    rotate: 30deg;
+
+}
+
+.prim2{
+    position: absolute;
+    left: 70px;
+    top: 30px;
+}
+
+
+
+.prim3{
+    position: absolute;
+    right: 70px;
+    top: 30px;
+}
+
+
+.prim4{
+    position: absolute;
+    right: 0;
+    top: 5%;
+    rotate: -30deg;
+}
+
+
+.secondaire{
+    display: flex;
+    width: 15%;
+    height: 20%;
+    border-radius: 20px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec1{
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+
+}
+
+.sec2{
+    position: absolute;
+    left: 70px;
+    bottom: 30px;
+}
+
+
+
+.sec3{
+    position: absolute;
+    right:70px;
+    bottom: 30px;
+}
+
+
+.sec4{
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+}
+
+
+.cercle{
+    position: relative;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(39, 39, 39);
+    border-radius: 50px;
+    border: solid 1px rgb(39, 39, 39);
+}
+
+.orientation{
+    width: 50px;
+    height: 50px;
+    border: solid 0.5px rgb(39, 39, 39);
+}
+
+.top{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0px 100% 0% 0% ;
+    background-color: rgb(44, 44, 44);
+
+
+}
+.bottom{
+    position: absolute;
+    bottom: 0 ;
+    border-radius: 0% 0% 0% 100% / 0% 0% 100% 100%;
+    background-color: rgb(44, 44, 44);
+
+}
+.left{
+    position: absolute;
+    left: 0;
+    border-radius: 100% 0% 0% 0%;
+    background-color: rgb(58, 58, 58);
+
+}
+.right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 0% 0% 100% 0% ;
+    background-color: rgb(58, 58, 58);
+
+}
+.bloc2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    height: 20%;
+    margin: auto;
+    margin-top: 1.5%;
+    color: white;
+}
+
+.tertiaire{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 20%;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.bloc3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    height: 20%;
+    margin: auto;
+    margin-top: 1.5%;
+    color: white;
+
+}
+
+.quaternaire{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 18%;
+    height: 20%;
+    border-radius: 20px;
+    background-color: black;
+   
+}
+
+
+.touche{
+    cursor: pointer;
+}
+
+label{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    bottom: 5px;
+    width: 30%;
+    height: 8%;
+    background-color: gray;
+    border-radius: 100px;
+
+}
+
+.ball{
+    position: absolute;
+    background-color: black;
+    width: 50%;
+    height: 80%;
+    border-radius: 100px;
+}
+
